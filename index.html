@@ -1,0 +1,918 @@
+<html class="is-index" data-template="index">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>-</title>
+    <link rel="shortcut icon" href="favicon1.ico" />
+    <link rel="stylesheet" type="text/css" href="Public/main.css">
+    <link rel="stylesheet" type="text/css" href="Public/style.css">
+    <link rel="stylesheet" type="text/css" href="Public/font-awesome.css">
+    <script src="Public/js/jquery.min.js" type="text/javascript"></script>
+    <script src="Public/js/main.js"></script>
+    <script type="text/javascript">
+        $('.sidebar-menu li').on('click', function(){
+            var id = $(this).find('a').attr("href"),
+                posi,
+                ele,
+                padding = 20;    
+            ele = $(id);
+            posi = ($(ele).offset()||0).top - padding;      
+            $('html, body').animate({scrollTop:posi}, 'slow');
+            $('.sidebar-menu li').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        });
+   </script>
+
+    <body>
+        <aside class="menu">
+            <header class="menu-header">
+                <a id="logo" class="menu-logo" href="http://so.uigreat.com">
+                    <figure>
+                        <img class="menu-logo-icon" src="http://so.uigreat.com/uploads/logo.png" alt="开发者导航" data-bd-imgshare-binded="1">
+
+                    </figure>
+                </a>
+            </header>
+            <nav class="menu-collections">
+                <p><strong>热门标签</strong></p>
+                <ul>
+                    <li><a class="label label-info" href="http://www.uigreat.com/course/explore" target="_blank">UI入门</a></li>
+                    <li><a class="label label-info" href="http://www.uigreat.com/page/guifan" target="_blank">尺寸规范</a></li>
+                    <li><a class="label label-info" href="http://www.uigreat.com/article/category/Standard" target="_blank">UI设计规范文章</a></li>
+                    <li><a class="label label-info" href="http://www.uigreat.com/group/3" target="_blank">设计软件下载</a></li>
+                    <li><a class="label label-info" href="http://so.uigreat.com/tools/devices/" target="_blank">设备尺寸</a></li>
+                    <li><a class="label label-info" href="http://www.uigreat.com/article" target="_blank">免费教程</a></li>
+                </ul>
+            </nav>
+            <nav id="menu-nav" class="menu-nav">
+                <div id="menu-list" class="menu-list">
+                    <ul id="menu-list-ul" class="menu-list-ul sidebar-menu">
+                        <li>
+                            <a href="#section-1">
+                                <i class="fa fa-flag"></i> <span>常用推荐</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-18">
+                                <i class="fa fa-folder-open"></i> <span>设计素材</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-20">
+                                <i class="fa fa-html5"></i> <span>H5收集</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-21">
+                                <i class="fa fa-android"></i> <span>Material Design专区</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-3">
+                                <i class="fa fa-lightbulb-o"></i> <span>灵感图库</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-4">
+                                <i class="fa fa-video-camera"></i> <span>UI动效</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-6">
+                                <i class="fa fa-pencil-square"></i> <span>尺寸规范</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-16">
+                                <i class="fa fa-square"></i> <span>icon图标</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-7">
+                                <i class="fa fa-mortar-board"></i> <span>设计教程</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-5">
+                                <i class="fa fa-eyedropper"></i> <span>设计工具</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-6">
+                                <i class="fa fa-pencil-square"></i> <span>尺寸规范</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-16">
+                                <i class="fa fa-square"></i> <span>icon图标</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-7">
+                                <i class="fa fa-mortar-board"></i> <span>设计教程</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-5">
+                                <i class="fa fa-eyedropper"></i> <span>设计工具</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-6">
+                                <i class="fa fa-pencil-square"></i> <span>尺寸规范</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-16">
+                                <i class="fa fa-square"></i> <span>icon图标</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-7">
+                                <i class="fa fa-mortar-board"></i> <span>设计教程</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#section-5">
+                                <i class="fa fa-eyedropper"></i> <span>设计工具</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <i id="menu-shadow-top" class="menu-list-shadow is-top" style="opacity: 0; transform: scaleY(0);"></i>
+                    <i id="menu-shadow-bottom" class="menu-list-shadow is-bottom" style="opacity: 0; transform: scaleY(0);"></i>
+                </div>
+                <a id="menu-nav-close" class="menu-close">
+                    <i class="icon is-close"></i>
+                    <strong>Close</strong>
+                </a>
+            </nav>
+            <footer id="menuHello" class="menu-hello" style="min-height: 0px;">
+                <div id="huggingFace" style="display: block;">
+                    <p>
+                        UI设计师网址导航，最贴心的 设计导航！
+                    </p>
+                    <p>
+                        如果你也有好的资源欢迎向我们<a href="/submit_url.html">推荐</a>
+                    </p>
+                    <p>
+                        Thank you! <img src="http://so.uigreat.com/uploads/Kissing.png" alt="Hugging face emoji" data-bd-imgshare-binded="1">
+                    </p>
+                </div>
+            </footer>
+        </aside>
+
+        <footer class="footer">
+            <a id="menu-nav-open" class="footer-share-nav">Menu</a>
+            <p></p>
+        </footer>
+
+        <!--内容区-->
+        <main class="main">
+            <div class="search search-top">这里放搜索框</div>
+            <div class="search search-bottom"></div>
+            <div class="container-fluid">
+                <div id="section-1" class="panel">
+                    <div class="l_title"><i class="fa fa-flag"></i>常用推荐
+                        <nav class="property-links"><a class="property-links-direct" href="http://cssreference.io/property/will-change/" data-property-name="will-change"
+                                data-tooltip="Single page for this property" target="_blank">Pop out</a> <a class="property-share"
+                                data-tooltip="Share on Twitter or Facebook" data-property-name="will-change">Share</a> <a target="_blank"
+                                href="https://developer.mozilla.org/en/docs/Web/CSS/will-change" data-tooltip="See on Mozilla Developer Network"
+                                rel="external">MDN</a></nav>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-md-3">
+
+                            <a href="http://huaban.com/" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://huaban.com/" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://huaban.com/" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://huaban.com/" target="_blank">
+                                        </a>
+                                        <a href="http://huaban.com/" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572b162fbdb73.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://huaban.com/" target="_blank">花瓣</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        虽然抄的pinterest，但是国内设计师比较常用的采集站
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="http://www.uigreat.com" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://www.uigreat.com" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://www.uigreat.com" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://www.uigreat.com" target="_blank">
+                                        </a>
+                                        <a href="http://www.uigreat.com" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572afdc8de07c.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://www.uigreat.com" target="_blank">UIGREAT</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        UI设计新人必上网站，设计学习交流社区
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="http://www.zcool.com.cn" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://www.zcool.com.cn" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://www.zcool.com.cn" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://www.zcool.com.cn" target="_blank">
+                                        </a>
+                                        <a href="http://www.zcool.com.cn" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572afd5e6ff38.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://www.zcool.com.cn" target="_blank">站酷</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        国内最大的设计师交流社区
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="https://www.pinterest.com" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="https://www.pinterest.com" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="https://www.pinterest.com" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="https://www.pinterest.com" target="_blank">
+                                        </a>
+                                        <a href="https://www.pinterest.com" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572afa7373544.png" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="https://www.pinterest.com" target="_blank">Pinterest</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        世界都在用的设计灵感收集地(花瓣它爹)
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="https://www.behance.net/" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="https://www.behance.net/" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="https://www.behance.net/" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="https://www.behance.net/" target="_blank">
+                                        </a>
+                                        <a href="https://www.behance.net/" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572af952c8983.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="https://www.behance.net/" target="_blank">Behance</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        全球设计师作品展示平台
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="http://www.dribbble.com" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://www.dribbble.com" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://www.dribbble.com" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://www.dribbble.com" target="_blank">
+                                        </a>
+                                        <a href="http://www.dribbble.com" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572af843a476b.png" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://www.dribbble.com" target="_blank">Dribbble</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        UI设计师推荐必去网站
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="section-1" class="panel">
+                    <div class="l_title"><i class="fa fa-flag"></i>常用推荐
+                        <nav class="property-links"><a class="property-links-direct" href="http://cssreference.io/property/will-change/" data-property-name="will-change"
+                                data-tooltip="Single page for this property" target="_blank">Pop out</a> <a class="property-share"
+                                data-tooltip="Share on Twitter or Facebook" data-property-name="will-change">Share</a> <a target="_blank"
+                                href="https://developer.mozilla.org/en/docs/Web/CSS/will-change" data-tooltip="See on Mozilla Developer Network"
+                                rel="external">MDN</a></nav>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-md-3">
+
+                            <a href="http://huaban.com/" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://huaban.com/" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://huaban.com/" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://huaban.com/" target="_blank">
+                                        </a>
+                                        <a href="http://huaban.com/" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572b162fbdb73.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://huaban.com/" target="_blank">花瓣</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        虽然抄的pinterest，但是国内设计师比较常用的采集站
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="http://www.uigreat.com" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://www.uigreat.com" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://www.uigreat.com" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://www.uigreat.com" target="_blank">
+                                        </a>
+                                        <a href="http://www.uigreat.com" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572afdc8de07c.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://www.uigreat.com" target="_blank">UIGREAT</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        UI设计新人必上网站，设计学习交流社区
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="http://www.zcool.com.cn" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://www.zcool.com.cn" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://www.zcool.com.cn" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://www.zcool.com.cn" target="_blank">
+                                        </a>
+                                        <a href="http://www.zcool.com.cn" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572afd5e6ff38.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://www.zcool.com.cn" target="_blank">站酷</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        国内最大的设计师交流社区
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="https://www.pinterest.com" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="https://www.pinterest.com" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="https://www.pinterest.com" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="https://www.pinterest.com" target="_blank">
+                                        </a>
+                                        <a href="https://www.pinterest.com" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572afa7373544.png" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="https://www.pinterest.com" target="_blank">Pinterest</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        世界都在用的设计灵感收集地(花瓣它爹)
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="https://www.behance.net/" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="https://www.behance.net/" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="https://www.behance.net/" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="https://www.behance.net/" target="_blank">
+                                        </a>
+                                        <a href="https://www.behance.net/" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572af952c8983.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="https://www.behance.net/" target="_blank">Behance</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        全球设计师作品展示平台
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="http://www.dribbble.com" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://www.dribbble.com" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://www.dribbble.com" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://www.dribbble.com" target="_blank">
+                                        </a>
+                                        <a href="http://www.dribbble.com" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572af843a476b.png" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://www.dribbble.com" target="_blank">Dribbble</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        UI设计师推荐必去网站
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="section-1" class="panel">
+                    <div class="l_title"><i class="fa fa-flag"></i>常用推荐
+                        <nav class="property-links"><a class="property-links-direct" href="http://cssreference.io/property/will-change/" data-property-name="will-change"
+                                data-tooltip="Single page for this property" target="_blank">Pop out</a> <a class="property-share"
+                                data-tooltip="Share on Twitter or Facebook" data-property-name="will-change">Share</a> <a target="_blank"
+                                href="https://developer.mozilla.org/en/docs/Web/CSS/will-change" data-tooltip="See on Mozilla Developer Network"
+                                rel="external">MDN</a></nav>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-md-3">
+
+                            <a href="http://huaban.com/" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://huaban.com/" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://huaban.com/" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://huaban.com/" target="_blank">
+                                        </a>
+                                        <a href="http://huaban.com/" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572b162fbdb73.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://huaban.com/" target="_blank">花瓣</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        虽然抄的pinterest，但是国内设计师比较常用的采集站
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="http://www.uigreat.com" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://www.uigreat.com" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://www.uigreat.com" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://www.uigreat.com" target="_blank">
+                                        </a>
+                                        <a href="http://www.uigreat.com" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572afdc8de07c.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://www.uigreat.com" target="_blank">UIGREAT</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        UI设计新人必上网站，设计学习交流社区
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="http://www.zcool.com.cn" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://www.zcool.com.cn" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://www.zcool.com.cn" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://www.zcool.com.cn" target="_blank">
+                                        </a>
+                                        <a href="http://www.zcool.com.cn" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572afd5e6ff38.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://www.zcool.com.cn" target="_blank">站酷</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        国内最大的设计师交流社区
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="https://www.pinterest.com" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="https://www.pinterest.com" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="https://www.pinterest.com" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="https://www.pinterest.com" target="_blank">
+                                        </a>
+                                        <a href="https://www.pinterest.com" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572afa7373544.png" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="https://www.pinterest.com" target="_blank">Pinterest</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        世界都在用的设计灵感收集地(花瓣它爹)
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="https://www.behance.net/" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="https://www.behance.net/" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="https://www.behance.net/" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="https://www.behance.net/" target="_blank">
+                                        </a>
+                                        <a href="https://www.behance.net/" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572af952c8983.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="https://www.behance.net/" target="_blank">Behance</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        全球设计师作品展示平台
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="http://www.dribbble.com" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://www.dribbble.com" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://www.dribbble.com" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://www.dribbble.com" target="_blank">
+                                        </a>
+                                        <a href="http://www.dribbble.com" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572af843a476b.png" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://www.dribbble.com" target="_blank">Dribbble</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        UI设计师推荐必去网站
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="section-1" class="panel">
+                    <div class="l_title"><i class="fa fa-flag"></i>常用推荐
+                        <nav class="property-links"><a class="property-links-direct" href="http://cssreference.io/property/will-change/" data-property-name="will-change"
+                                data-tooltip="Single page for this property" target="_blank">Pop out</a> <a class="property-share"
+                                data-tooltip="Share on Twitter or Facebook" data-property-name="will-change">Share</a> <a target="_blank"
+                                href="https://developer.mozilla.org/en/docs/Web/CSS/will-change" data-tooltip="See on Mozilla Developer Network"
+                                rel="external">MDN</a></nav>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-md-3">
+
+                            <a href="http://huaban.com/" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://huaban.com/" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://huaban.com/" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://huaban.com/" target="_blank">
+                                        </a>
+                                        <a href="http://huaban.com/" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572b162fbdb73.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://huaban.com/" target="_blank">花瓣</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        虽然抄的pinterest，但是国内设计师比较常用的采集站
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="http://www.uigreat.com" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://www.uigreat.com" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://www.uigreat.com" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://www.uigreat.com" target="_blank">
+                                        </a>
+                                        <a href="http://www.uigreat.com" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572afdc8de07c.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://www.uigreat.com" target="_blank">UIGREAT</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        UI设计新人必上网站，设计学习交流社区
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="http://www.zcool.com.cn" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://www.zcool.com.cn" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://www.zcool.com.cn" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://www.zcool.com.cn" target="_blank">
+                                        </a>
+                                        <a href="http://www.zcool.com.cn" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572afd5e6ff38.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://www.zcool.com.cn" target="_blank">站酷</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        国内最大的设计师交流社区
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="https://www.pinterest.com" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="https://www.pinterest.com" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="https://www.pinterest.com" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="https://www.pinterest.com" target="_blank">
+                                        </a>
+                                        <a href="https://www.pinterest.com" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572afa7373544.png" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="https://www.pinterest.com" target="_blank">Pinterest</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        世界都在用的设计灵感收集地(花瓣它爹)
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="https://www.behance.net/" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="https://www.behance.net/" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="https://www.behance.net/" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="https://www.behance.net/" target="_blank">
+                                        </a>
+                                        <a href="https://www.behance.net/" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572af952c8983.jpg" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="https://www.behance.net/" target="_blank">Behance</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        全球设计师作品展示平台
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <a href="http://www.dribbble.com" target="_blank">
+                            </a>
+                            <div class="l_box">
+                                <a href="http://www.dribbble.com" target="_blank">
+                                </a>
+                                <div class="web-content-top">
+                                    <a href="http://www.dribbble.com" target="_blank">
+                                    </a>
+                                    <div class="web-logo">
+                                        <a href="http://www.dribbble.com" target="_blank">
+                                        </a>
+                                        <a href="http://www.dribbble.com" target="_blank">
+                                            <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572af843a476b.png" data-bd-imgshare-binded="1">
+                                        </a>
+                                    </div>
+                                    <span class="web-name"><a href="http://www.dribbble.com" target="_blank">Dribbble</a></span>
+                                </div>
+                                <div class="web-content-bottom">
+                                    <div class="dot web-content-bottom-content">
+                                        UI设计师推荐必去网站
+                                        <span class="readmore">Read more »</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--内容区-->
+
+        <div id="modal-share" class="modal">
+            <div class="modal-box">
+                <p class="modal-title">Share this CSS property</p>
+                <p class="modal-url">
+                    <input id="modal-input" class="input" type="text" value="http://cssreference.io/" readonly>
+                    <button id="modal-copy" class="button is-primary" data-clipboard-target="#modal-input">Copy</button>
+                </p>
+                <p class="modal-social">
+                    <a id="modal-twitter" class="button is-twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fcssreference.io&text=CSS%20Reference%3A%20a%20visual%20guide%20to%20the%20most%20popular%20%23CSS%20properties">Share on Twitter</a>
+                    <a id="modal-facebook" class="button is-facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fcssreference.io">Share on Facebook</a>
+                </p>
+                <a id="modal-close" class="modal-close"></a>
+            </div>
+
+
+    </body>
+
+</html>
