@@ -90,18 +90,18 @@ p.footer-title strong {
     }
  p.footer-title small a:hover {
     color: #fff;
-    background: #5491ff;
+    background: #555e6b;
 }
 div#huggingFace a {
     margin-left: 6px;
     font-size: 13px;
-    color: #5491ff;
+    color: #2c3e50;
     background: #e7f4ff;
     padding: 2px 8px;
     border-radius: 4px;
 }
 div#huggingFace a:hover {
-    background: #5491ff;
+    background: #555e6b;
     color: #fff;
 }
 
@@ -3400,7 +3400,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
-  font-weight: bold;
+  /*font-weight: bold;*/
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -3440,14 +3440,14 @@ a.label:focus {
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #449d44;
+  background-color: #191414;
 }
 .label-info {
-  background-color: #5491ff;
+  background-color: #2c3e50;
 }
 .label-info[href]:hover,
 .label-info[href]:focus {
-  background-color: #31b0d5;
+  background-color: #191414;
 }
 .label-warning {
   background-color: #f0ad4e;
