@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <title>-</title>
-    <link rel="shortcut icon" href="favicon1.ico" />
+    <title>码上道-为了代码道路永不迷路</title>
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="Public/main.css">
     <link rel="stylesheet" type="text/css" href="Public/style.css">
     <link rel="stylesheet" type="text/css" href="Public/font-awesome.css">
@@ -57,7 +57,7 @@
                        rel="external">MDN</a>
                 </nav>
             </div>
-            <div class="row" id="boxbox"></div>
+            <div class="row" id="boxbox-{{=it.id}}"></div>
         </div>
     </script>
     <script type="text/javascript">
@@ -77,15 +77,16 @@
         $(function () {
 
             $.getJSON('json/index.json', function (data) {
+                $('.container-fluid').empty();
                 for (var panel in data) {
                     var panelfn = doT.template($('#paneltmpl').text());
                     $('.container-fluid').append(panelfn(data[panel]));
 
-                    for (var box in data.children) {
-                        console.log(data.children[box]);
+                    for (var box in data[panel].children) {
+                        console.log(data[panel].children[box]);
                         var boxfn = doT.template($('#boxtmpl').text());
-                        console.log(boxfn(data.children[box]));
-                        $('#boxbox').append(boxfn(data.children[box]));
+                        console.log(boxfn(data[panel].children[box]));
+                        $('#boxbox-' + data[panel].id).append(boxfn(data[panel].children[box]));
                     }
                 }
                 
@@ -100,7 +101,7 @@
         <header class="menu-header">
             <a id="logo" class="menu-logo" href="http://so.uigreat.com">
                 <figure>
-                    <img class="menu-logo-icon" src="http://so.uigreat.com/uploads/logo.png" alt="开发者导航" data-bd-imgshare-binded="1">
+                    <img class="menu-logo-icon" src="Public/images/coddder-logo.png" alt="开发者导航" data-bd-imgshare-binded="1">
 
                 </figure>
             </a>

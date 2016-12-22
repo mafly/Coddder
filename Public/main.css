@@ -405,7 +405,7 @@ html.is-index {
 }
 
 .menu-header {
-    padding: 1.5rem
+    padding: 1.0rem
 }
 
 .menu-logo {
@@ -438,7 +438,7 @@ html.is-index {
 }
 
 .menu-logo-icon {
-    height: 24px;
+    height: 40px;
     position: relative;
 }
 
@@ -2055,7 +2055,7 @@ html.is-index {
     }
 }
 .search {
-    height: 78px;
+    height: 76px;
     width: 100%;
 }
 .search-top {
