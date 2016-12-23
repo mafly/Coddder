@@ -1,0 +1,57 @@
+﻿<script id="boxtmpl" type="text/x-dot-template">
+    <div class="col-md-3">
+        <div class="l_box">
+            <div class="web-content-top">
+                <a href="{{=it.url}}" target="_blank">
+                </a>
+                <div class="web-logo">
+                    <a href="{{=it.url}}" target="_blank">
+                    </a>
+                    <a href="{{=it.url}}" target="_blank">
+                        <img class="img-responsive" src="http://img.ui100day.com/2016-05-05_572b162fbdb73.jpg"
+                             data-bd-imgshare-binded="1">
+                    </a>
+                </div>
+                <span class="web-name">
+                    <a href="{{=it.url}}" target="_blank">
+                        {{=it.name}}
+                    </a>
+                </span>
+            </div>
+            <div class="web-content-bottom">
+                <div class="dot web-content-bottom-content">
+                    虽然抄的pinterest，但是国内设计师比较常用的采集站
+                    <span class="readmore">
+                        Read more »
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="paneltmpl" type="text/x-dot-template">
+    <div id="block-{{=it.id}}" class="panel">
+        <div class="l_title">
+            <i class="{{=it.icon}}"></i>{{=it.name}}
+            <nav class="property-links">
+                <a class="property-links-direct" href="http://cssreference.io/property/will-change/" data-property-name="will-change"
+                   data-tooltip="Single page for this property" target="_blank">Pop out</a>
+                <a class="property-share"
+                   data-tooltip="Share on Twitter or Facebook" data-property-name="will-change">Share</a>
+                <a target="_blank"
+                   href="https://developer.mozilla.org/en/docs/Web/CSS/will-change" data-tooltip="See on Mozilla Developer Network"
+                   rel="external">MDN</a>
+            </nav>
+        </div>
+        <div class="row" id="boxbox-{{=it.id}}"></div>
+    </div>
+</script>
+
+<script id="litmpl" type="text/x-dot-template">
+    <li>
+        <a href="#block-{{=it.id}}">
+            <i class="{{=it.icon}}"></i> <span>{{=it.name}}</span>
+        </a>
+    </li>
+</script>

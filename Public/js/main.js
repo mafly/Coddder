@@ -212,7 +212,7 @@ function limitNumber(value, min, max) {
 }
 
 function buildTwitterURL(encodedURL, propertyName) {
-  var text = 'Here\'s how ' + propertyName + ' works in #CSS';
-  var encodedText = encodeURIComponent(text);
-  return 'https://twitter.com/intent/tweet?url=' + encodedURL + '&text=' + encodedText;
+    var text = 'Here\'s how ' + propertyName + ' works in #CSS';
+    var encodedText = encodeURIComponent(text);
+    return 'https://twitter.com/intent/tweet?url=' + encodedURL + '&text=' + encodedText;
 }

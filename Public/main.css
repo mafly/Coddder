@@ -652,8 +652,8 @@ html.is-index {
     display: block;
     font-size: 16px;
     line-height: 1.4;
-    padding: 1.5rem;
-    padding-bottom: 1rem
+    padding: 0.5rem;
+    padding-bottom: 0.1rem
 }
 
 #huggingFace img {
