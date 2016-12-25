@@ -2071,3 +2071,12 @@ html.is-index {
 ::-webkit-scrollbar-track{border-radius:5px;background-color:#f1f1f1}
 ::-webkit-scrollbar{width:6px;background-color:#F5F5F5}
 ::-webkit-scrollbar-thumb{border-radius:5px;background-color:#b1b2b3;}
+
+.readmore {
+    font-size: 13px;
+    color: #808080;
+    float: right;
+}
+.readmore .fa {
+    margin-right: 0px;
+}

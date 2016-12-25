@@ -1,4 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
+    //获取模板页面
+    $.get('template.html', function (res) {
+        $("head").append(res);
+    });
+            
+    //获取数据并渲染
+    $.getJSON('json/index.json', function (data) {
+        $('.container-fluid').empty();
+        $('#menu-list-ul').empty();
+        for (var i in data) {
+            var lifn = doT.template($('#litmpl').text());
+            $('#menu-list-ul').append(lifn(data[i]));
+
+            var panelfn = doT.template($('#paneltmpl').text());
+            $('.container-fluid').append(panelfn(data[i]));
+
+            for (var box in data[i].children) {
+                console.log(data[i].children[box]);
+                var boxfn = doT.template($('#boxtmpl').text());
+                $('#boxbox-' + data[i].id).append(boxfn(data[i].children[box]));
+            }
+        } 
+    });
+
   var $root = document.documentElement;
   var template = $root.dataset.template;
 

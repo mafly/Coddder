@@ -16,7 +16,7 @@
     padding: 10px;
   }
   .l_box{
-    height: 112px;
+    height: 125px;
     padding: 10px;
     background-color: #fff;
     border-radius: 4px;
@@ -55,10 +55,10 @@ span.web-name {
 .web-content-bottom {
     font-size: 13px;
     color: #808080;
-    padding: 10px 0 0 0;
+    padding: 6px 0 0 0;
 }
 img.img-responsive {
-    border-radius: 50%;
+    /*border-radius: 50%;*/
 }
 
 .l_title{

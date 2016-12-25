@@ -1,89 +1,33 @@
 ﻿[{
-    "id": "1",
+    "id": "100",
     "name": "常用推荐",
-    "icon": "fa fa-flag",
+    "icon": "fa fa-flag-checkered",
     "children": [
         {
-            "id": "1",
-            "name": "花瓣",
-            "icon": "http://img.ui100day.com/2016-05-05_572b162fbdb73.jpg",
-			"url": "http://mafly.xyz",
-			"description":" 虽然抄的pinterest，但是国内设计师比较常用的采集站 "
+            "id": "10001",
+            "name": "GitHub",
+            "icon": "http://mafly.qiniudn.com/coddder/github.png",
+			"url": "http://github.com",
+            "description": " GitHub是一个通过Git进行版本控制的软件源代码托管服务。世界上最大的开源社区。 "
         },
         {
-            "id": "1",
-            "name": "常用推荐",
-            "icon": "fa fa-flag",
-			"url": "http://mafly.xyz",
-			"description":""
+            "id": "10002",
+            "name": "StackOverFlow",
+            "icon": "http://mafly.qiniudn.com/coddder/stackoverflow.png",
+			"url": "http://stackoverflow.com",
+			"description":"Stack Overflow是一个与程序相关的IT技术问答网站。"
+        },
+        {
+            "id": "10003",
+            "name": "开源中国",
+            "icon": "http://mafly.qiniudn.com/coddder/oschina.png",
+			"url": "https://www.oschina.net/",
+			"description":"目前国内最大的开源技术社区，为IT开发者提供了一个发现、使用、并交流开源技术的平台。"
         }
     ]
 },
 {
     "id": "2",
-    "name": "设计素材",
-    "icon": "fa fa-flag",
-    "children": [
-        {
-            "id": "1",
-            "name": "花瓣",
-            "icon": "http://img.ui100day.com/2016-05-05_572b162fbdb73.jpg",
-			"url": "http://mafly.xyz",
-			"description":" 虽然抄的pinterest，但是国内设计师比较常用的采集站 "
-        },
-        {
-            "id": "1",
-            "name": "常用推荐",
-            "icon": "fa fa-flag",
-			"url": "http://mafly.xyz",
-			"description":""
-        }
-    ]
-},
-{
-    "id": "3",
-    "name": "设计素材",
-    "icon": "fa fa-flag",
-    "children": [
-        {
-            "id": "1",
-            "name": "花瓣",
-            "icon": "http://img.ui100day.com/2016-05-05_572b162fbdb73.jpg",
-			"url": "http://mafly.xyz",
-			"description":" 虽然抄的pinterest，但是国内设计师比较常用的采集站 "
-        },
-        {
-            "id": "1",
-            "name": "常用推荐",
-            "icon": "fa fa-flag",
-			"url": "http://mafly.xyz",
-			"description":""
-        }
-    ]
-},
-{
-    "id": "4",
-    "name": "设计素材",
-    "icon": "fa fa-flag",
-    "children": [
-        {
-            "id": "1",
-            "name": "花瓣",
-            "icon": "http://img.ui100day.com/2016-05-05_572b162fbdb73.jpg",
-			"url": "http://mafly.xyz",
-			"description":" 虽然抄的pinterest，但是国内设计师比较常用的采集站 "
-        },
-        {
-            "id": "1",
-            "name": "常用推荐",
-            "icon": "fa fa-flag",
-			"url": "http://mafly.xyz",
-			"description":""
-        }
-    ]
-},
-{
-    "id": "5",
     "name": "设计素材",
     "icon": "fa fa-flag",
     "children": [
