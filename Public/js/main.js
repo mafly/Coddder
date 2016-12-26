@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.container-fluid').empty();
         $('#menu-list-ul').empty();
         for (var i in data) {
+			console.log(data[i]);
             var lifn = doT.template($('#litmpl').text());
             $('#menu-list-ul').append(lifn(data[i]));
 
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             $('.container-fluid').append(panelfn(data[i]));
 
             for (var box in data[i].children) {
-                console.log(data[i].children[box]);
+                
                 var boxfn = doT.template($('#boxtmpl').text());
                 $('#boxbox-' + data[i].id).append(boxfn(data[i].children[box]));
             }

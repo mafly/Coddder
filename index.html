@@ -12,20 +12,6 @@
     <script src="Public/js/jquery.min.js" type="text/javascript"></script>
     <script src="Public/js/main.js"></script>
     <script src="Public/js/doT.js"></script>
-    <script type="text/javascript">
-        $('.sidebar-menu li').on('click', function () {
-            var id = $(this).find('a').attr("href"),
-                posi,
-                ele,
-                padding = 20;
-            ele = $(id);
-            posi = ($(ele).offset() || 0).top - padding;
-            $('html, body').animate({ scrollTop: posi }, 'slow');
-            $('.sidebar-menu li').removeClass('active');
-            $(this).addClass('active');
-            return false;
-        });
-    </script>
 </head>
 <body>
     <aside class="menu">
@@ -102,7 +88,21 @@
             <a id="modal-close" class="modal-close"></a>
         </div>
     </div>
-
+    <script type="text/javascript">
+        $('#menu-nav').on('click','.sidebar-menu li', function () {
+            var id = $(this).find('a').attr("href"),
+                posi,
+                ele,
+                padding = 20;
+            ele = $(id);
+			console.log(id);
+            posi = ($(ele).offset() || 0).top - padding;
+            $('html, body').animate({ scrollTop: posi }, 'slow');
+            $('.sidebar-menu li').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        });
+    </script>
 </body>
 
 </html>

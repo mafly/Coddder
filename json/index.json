@@ -23,27 +23,134 @@
             "icon": "http://mafly.qiniudn.com/coddder/oschina.png",
 			"url": "https://www.oschina.net/",
 			"description":"目前国内最大的开源技术社区，为IT开发者提供了一个发现、使用、并交流开源技术的平台。"
+        },
+        {
+            "id": "10004",
+            "name": "CSDN",
+            "icon": "public/icons/csdn.png",
+			"url": "https://csdn.net/",
+			"description":"最大中文IT社区，为IT专业技术人员提供最全面的信息传播和服务平台，技术新闻、文章聚集地。"
+        },
+        {
+            "id": "10005",
+            "name": "博客园",
+            "icon": "public/icons/cnblog.png",
+			"url": "http://cnblog.com/",
+			"description":"一个面向开发者的知识分享社区。开发者以博客形式分享自己的技术，界面虽丑，但可以自己定制。"
+        },
+        {
+            "id": "10006",
+            "name": "WordPress",
+            "icon": "public/icons/wordpress.png",
+			"url": "https://wordpress.org/",
+			"description":"一个PHP语言开发的开源博客系统，也可用于内容管理系统，拥有成千上万个各式插件和不计其数的主题模板。"
         }
     ]
 },
 {
-    "id": "2",
-    "name": "设计素材",
-    "icon": "fa fa-flag",
+    "id": "200",
+    "name": "行业新闻",
+    "icon": "fa fa-newspaper-o",
     "children": [
         {
-            "id": "1",
-            "name": "花瓣",
-            "icon": "http://img.ui100day.com/2016-05-05_572b162fbdb73.jpg",
-			"url": "http://mafly.xyz",
-			"description":" 虽然抄的pinterest，但是国内设计师比较常用的采集站 "
+            "id": "20001",
+            "name": "InfoQ",
+            "icon": "public/icons/infoq.png",
+			"url": "http://www.infoq.com/cn/",
+			"description":"一家全球性在线新闻/社区网站。提供中立的、由开发者主导的会议以及新闻、文章、视频演讲和采访等资讯服务。"
         },
         {
-            "id": "1",
-            "name": "常用推荐",
-            "icon": "fa fa-flag",
-			"url": "http://mafly.xyz",
-			"description":""
+            "id": "20002",
+            "name": "PingWest品玩",
+            "icon": "public/icons/pingwest.png",
+			"url": "http://www.pingwest.com",
+			"description":"一家从科技媒体起家的数字文化内容平台。推荐有品好玩的科技产品。"
+        }
+    ]
+}
+
+,
+{
+    "id": "300",
+    "name": "行业新闻",
+    "icon": "fa fa-newspaper-o",
+    "children": [
+        {
+            "id": "20001",
+            "name": "InfoQ",
+            "icon": "public/icons/infoq.png",
+			"url": "http://www.infoq.com/cn/",
+			"description":"一家全球性在线新闻/社区网站。提供中立的、由开发者主导的会议以及新闻、文章、视频演讲和采访等资讯服务。"
+        },
+        {
+            "id": "20002",
+            "name": "PingWest品玩",
+            "icon": "public/icons/pingwest.png",
+			"url": "http://www.pingwest.com",
+			"description":"一家从科技媒体起家的数字文化内容平台。推荐有品好玩的科技产品。"
+        }
+    ]
+},
+{
+    "id": "400",
+    "name": "行业新闻",
+    "icon": "fa fa-newspaper-o",
+    "children": [
+        {
+            "id": "20001",
+            "name": "InfoQ",
+            "icon": "public/icons/infoq.png",
+			"url": "http://www.infoq.com/cn/",
+			"description":"一家全球性在线新闻/社区网站。提供中立的、由开发者主导的会议以及新闻、文章、视频演讲和采访等资讯服务。"
+        },
+        {
+            "id": "20002",
+            "name": "PingWest品玩",
+            "icon": "public/icons/pingwest.png",
+			"url": "http://www.pingwest.com",
+			"description":"一家从科技媒体起家的数字文化内容平台。推荐有品好玩的科技产品。"
+        }
+    ]
+},
+{
+    "id": "500",
+    "name": "行业新闻",
+    "icon": "fa fa-newspaper-o",
+    "children": [
+        {
+            "id": "20001",
+            "name": "InfoQ",
+            "icon": "public/icons/infoq.png",
+			"url": "http://www.infoq.com/cn/",
+			"description":"一家全球性在线新闻/社区网站。提供中立的、由开发者主导的会议以及新闻、文章、视频演讲和采访等资讯服务。"
+        },
+        {
+            "id": "20002",
+            "name": "PingWest品玩",
+            "icon": "public/icons/pingwest.png",
+			"url": "http://www.pingwest.com",
+			"description":"一家从科技媒体起家的数字文化内容平台。推荐有品好玩的科技产品。"
+        }
+    ]
+},
+{
+    "id": "600",
+    "name": "行业新闻",
+    "icon": "fa fa-newspaper-o",
+    "children": [
+        {
+            "id": "20001",
+            "name": "InfoQ",
+            "icon": "public/icons/infoq.png",
+			"url": "http://www.infoq.com/cn/",
+			"description":"一家全球性在线新闻/社区网站。提供中立的、由开发者主导的会议以及新闻、文章、视频演讲和采访等资讯服务。"
+        },
+        {
+            "id": "20002",
+            "name": "PingWest品玩",
+            "icon": "public/icons/pingwest.png",
+			"url": "http://www.pingwest.com",
+			"description":"一家从科技媒体起家的数字文化内容平台。推荐有品好玩的科技产品。"
         }
     ]
 }]
