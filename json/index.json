@@ -27,23 +27,37 @@
         {
             "id": "10004",
             "name": "CSDN",
-            "icon": "public/icons/csdn.png",
+            "icon": "Public/icons/csdn.png",
 			"url": "https://csdn.net/",
 			"description":"最大中文IT社区，为IT专业技术人员提供最全面的信息传播和服务平台，技术新闻、文章聚集地。"
         },
         {
             "id": "10005",
             "name": "博客园",
-            "icon": "public/icons/cnblog.png",
-			"url": "http://cnblog.com/",
+            "icon": "Public/icons/cnblog.png",
+			"url": "http://cnblogs.com/",
 			"description":"一个面向开发者的知识分享社区。开发者以博客形式分享自己的技术，界面虽丑，但可以自己定制。"
         },
         {
             "id": "10006",
             "name": "WordPress",
-            "icon": "public/icons/wordpress.png",
+            "icon": "Public/icons/wordpress.png",
 			"url": "https://wordpress.org/",
 			"description":"一个PHP语言开发的开源博客系统，也可用于内容管理系统，拥有成千上万个各式插件和不计其数的主题模板。"
+        },
+        {
+            "id": "10007",
+            "name": "MSDN",
+            "icon": "Public/icons/msdn.png",
+			"url": "https://msdn.microsoft.com/zh-cn/",
+			"description":"英文全称：Microsoft Developer Network. 专门介绍各种编程技巧。微软公司面向软件开发者的一种信息服务。"
+        },
+        {
+            "id": "10008",
+            "name": "IBM DeveloperWorks",
+            "icon": "//www.ibm.com/favicon.ico",
+			"url": "http://www.ibm.com/developerworks/cn/",
+			"description":"IBM 的面向软件开发人员、IT专业人员和全球学生的免费网络专业网络和技术资源中心。"
         }
     ]
 },
@@ -55,16 +69,51 @@
         {
             "id": "20001",
             "name": "InfoQ",
-            "icon": "public/icons/infoq.png",
+            "icon": "Public/icons/infoq.png",
 			"url": "http://www.infoq.com/cn/",
 			"description":"一家全球性在线新闻/社区网站。提供中立的、由开发者主导的会议以及新闻、文章、视频演讲和采访等资讯服务。"
         },
         {
             "id": "20002",
-            "name": "PingWest品玩",
-            "icon": "public/icons/pingwest.png",
+            "name": "Engadget 中国版",
+            "icon": "Public/icons/engadget_black.png",
+			"url": "http://cn.engadget.com/",
+			"description":"来自 Engadget 中国版团队的科技新闻和评测。掌握最新消费性电子产品消息。"
+        },
+        {
+            "id": "20003",
+            "name": "ITeye",
+            "icon": "Public/icons/iteye.gif",
+			"url": "http://www.iteye.com",
+			"description":"一个中文IT技术门户和社区网站。有行业最新咨询，可以找到技术文章、开源项目。"
+        },
+        {
+            "id": "20004",
+            "name": "月光博客",
+            "icon": "Public/icons/willliamlong.png",
+			"url": "http://www.williamlong.info",
+			"description":"是一个专注于互联网、搜索引擎、社会化网络、IT技术、谷歌地图、软件应用等领域的原创IT科技博客，作者龙威廉。"
+        },
+        {
+            "id": "20005",
+            "name": "51CTO",
+            "icon": "Public/icons/51cto.png",
+			"url": "http://www.51cto.com",
+			"description":"一个为IT技术人员搭建的互动媒体平台，技术人员提供新闻资讯、技术文档、博客、技术圈等服务。"
+        },
+        {
+            "id": "20006",
+            "name": "PingWest 品玩",
+            "icon": "Public/icons/pingwest.png",
 			"url": "http://www.pingwest.com",
 			"description":"一家从科技媒体起家的数字文化内容平台。推荐有品好玩的科技产品。"
+        },
+        {
+            "id": "20007",
+            "name": "CodePlex",
+            "icon": "Public/icons/codeplex.png",
+			"url": "http://www.codeplex.com",
+			"description":"是微软的开源工程网站，涉及诸多微软最新技术的开源工程，同时你也可以建立并向世界展示自己的开源工程。"
         }
     ]
 }
@@ -78,14 +127,14 @@
         {
             "id": "20001",
             "name": "InfoQ",
-            "icon": "public/icons/infoq.png",
+            "icon": "Public/icons/infoq.png",
 			"url": "http://www.infoq.com/cn/",
 			"description":"一家全球性在线新闻/社区网站。提供中立的、由开发者主导的会议以及新闻、文章、视频演讲和采访等资讯服务。"
         },
         {
             "id": "20002",
             "name": "PingWest品玩",
-            "icon": "public/icons/pingwest.png",
+            "icon": "Public/icons/pingwest.png",
 			"url": "http://www.pingwest.com",
 			"description":"一家从科技媒体起家的数字文化内容平台。推荐有品好玩的科技产品。"
         }
@@ -99,14 +148,14 @@
         {
             "id": "20001",
             "name": "InfoQ",
-            "icon": "public/icons/infoq.png",
+            "icon": "Public/icons/infoq.png",
 			"url": "http://www.infoq.com/cn/",
 			"description":"一家全球性在线新闻/社区网站。提供中立的、由开发者主导的会议以及新闻、文章、视频演讲和采访等资讯服务。"
         },
         {
             "id": "20002",
             "name": "PingWest品玩",
-            "icon": "public/icons/pingwest.png",
+            "icon": "Public/icons/pingwest.png",
 			"url": "http://www.pingwest.com",
 			"description":"一家从科技媒体起家的数字文化内容平台。推荐有品好玩的科技产品。"
         }
@@ -120,14 +169,14 @@
         {
             "id": "20001",
             "name": "InfoQ",
-            "icon": "public/icons/infoq.png",
+            "icon": "Public/icons/infoq.png",
 			"url": "http://www.infoq.com/cn/",
 			"description":"一家全球性在线新闻/社区网站。提供中立的、由开发者主导的会议以及新闻、文章、视频演讲和采访等资讯服务。"
         },
         {
             "id": "20002",
             "name": "PingWest品玩",
-            "icon": "public/icons/pingwest.png",
+            "icon": "Public/icons/pingwest.png",
 			"url": "http://www.pingwest.com",
 			"description":"一家从科技媒体起家的数字文化内容平台。推荐有品好玩的科技产品。"
         }
@@ -141,14 +190,14 @@
         {
             "id": "20001",
             "name": "InfoQ",
-            "icon": "public/icons/infoq.png",
+            "icon": "Public/icons/infoq.png",
 			"url": "http://www.infoq.com/cn/",
 			"description":"一家全球性在线新闻/社区网站。提供中立的、由开发者主导的会议以及新闻、文章、视频演讲和采访等资讯服务。"
         },
         {
             "id": "20002",
             "name": "PingWest品玩",
-            "icon": "public/icons/pingwest.png",
+            "icon": "Public/icons/pingwest.png",
 			"url": "http://www.pingwest.com",
 			"description":"一家从科技媒体起家的数字文化内容平台。推荐有品好玩的科技产品。"
         }
