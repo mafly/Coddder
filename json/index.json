@@ -28,7 +28,7 @@
             "id": "10004",
             "name": "CSDN",
             "icon": "Public/icons/csdn.png",
-			"url": "https://csdn.net/",
+			"url": "http://csdn.net/",
 			"description":"最大中文IT社区，为IT专业技术人员提供最全面的信息传播和服务平台，技术新闻、文章聚集地。"
         },
         {

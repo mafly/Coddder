@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.container-fluid').empty();
         $('#menu-list-ul').empty();
         for (var i in data) {
-			console.log(data[i]);
             var lifn = doT.template($('#litmpl').text());
             $('#menu-list-ul').append(lifn(data[i]));
 
@@ -166,75 +165,27 @@ document.addEventListener('DOMContentLoaded', function() {
     facebookURL = 'https://www.facebook.com/sharer.php?u=http%3A%2F%2Fcssreference.io';
     twitterURL = 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fcssreference.io&text=CSS%20Reference%3A%20a%20visual%20guide%20to%20the%20most%20popular%20%23CSS%20properties';
   }
+  
+  //¹ö¶¯Ìõ
+  $('#menu-nav').on('click','.sidebar-menu li', function () {
+	var padding = 96;
+	if (window.innerWidth < 800) {
+		$('#menu-nav').removeClass('is-active');
+		padding = 20;
+	};
+			
+    var id = $(this).find('a').attr("href"),
+        posi,
+        ele;
+        ele = $(id);
+        posi = ($(ele).offset() || 0).top - padding;
+		$('html, body').animate({ scrollTop: posi }, 'slow');
+        $('.sidebar-menu li').removeClass('active');
+        $(this).addClass('active');
+		return false;
+    });  
 });
 
-// Pure functions
-function initializeMatches($menuItems) {
-  var matches = [];
-
-  Array.prototype.forEach.call($menuItems, function($el, index) {
-    var propertyName = $el.dataset.propertyName;
-    matches.push({
-      DOMIndex: index,
-      propertyName: propertyName,
-    });
-  });
-
-  return matches;
-}
-
-function cleanMenu($menuItems, highlight, selection) {
-  Array.prototype.forEach.call($menuItems, function($el, index) {
-    if (highlight) {
-      $el.innerHTML = $el.dataset.propertyName;
-      $el.classList.remove('is-highlighted');
-    }
-    if (selection) {
-      $el.classList.remove('is-selected');
-    }
-  });
-}
-
-function navigateMenu($menuItems, matches, currentIndex, increment = true) {
-  Array.prototype.forEach.call($menuItems, function($el, index) {
-    $el.classList.remove('is-selected');
-  });
-
-  if (matches.length < 1) {
-    return -1;
-  }
-
-  var desiredIndex = increment ? currentIndex + 1 : currentIndex - 1;
-  var actualIndex = limitNumber(desiredIndex, -1, matches.length - 1);
-
-  if (actualIndex > -1) {
-    var DOMIndex = matches[actualIndex].DOMIndex;
-    $menuItems[DOMIndex].classList.add('is-selected');
-  }
-
-  return actualIndex;
-}
-
-function highlightQuery($el, propertyName, query) {
-  var queryIndex = propertyName.indexOf(query);
-
-  if (queryIndex >= 0) {
-    var before = propertyName.substring(0, queryIndex);
-    var highlight = '<span class="highlight">' + propertyName.substring(queryIndex, queryIndex + query.length) + '</span>';
-    var after = propertyName.substring(queryIndex + query.length);
-    $el.innerHTML = before + highlight + after;
-    $el.classList.add('is-highlighted');
-    return true;
-  } else {
-    $el.innerHTML = propertyName;
-    $el.classList.remove('is-highlighted');
-    return false;
-  }
-}
-
-function limitNumber(value, min, max) {
-  return Math.min(Math.max(value, min), max);
-}
 
 function buildTwitterURL(encodedURL, propertyName) {
     var text = 'Here\'s how ' + propertyName + ' works in #CSS';
